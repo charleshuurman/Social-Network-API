@@ -16,4 +16,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialNetworkDB
     useUnifiedTopology: true,
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
